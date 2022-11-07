@@ -16,10 +16,38 @@ img{
 }
 body,html {
   height: 100%;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
+  scroll-behavior: smooth;
+  color: white;
   
 }
+
+#cocktails{
+  height: 100%
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+section {
+  display: flex
+}
+
+ul{
+  margin: 0 2em 2em 3em;
+  padding: 0;
+}
+
+img {
+  max-height: 80%;
+  margin-right: 2em
+}
+
+/*STYLE*/
 
 .bgImage {
   background-image: url("background.jpg");
@@ -61,10 +89,50 @@ h1 {
   font-style: italic;;
 }
 
-li {
-  list-style: none;
+h2 {
+  margin: 1em auto;
+  width: 30%;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight:bold;
+  text-decoration: underline;
 }
 
-div{
-  display: flex;
+li {
+  list-style: none;
+  margin: 0 1em 1em 0;
+  font-size: 2em;
+  font-weight: 100;
 }
+
+p {
+  margin: 2em;
+  font-size: 1.5em;
+}
+
+input{
+  width: 30vw;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 20px;
+
+
+}
+a:visited{
+  color: black
+}
+input {
+  color: gray;
+  font-size: 20px;
+}
+

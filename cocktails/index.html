@@ -2,45 +2,44 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
+    	<meta name="description" content="Find your favorite cocktails' recipes">
+    	<meta name="keywords" content="cocktails, database, search, find, recipes">
 
-		<title>Title in the tab</title>
+		<title>Cocktail finder</title>
 
 		<!-- external CSS link -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		
 		<div class="bgImage"></div>
 		<div class="bg-text">
-			<h1>Select your favorite cocktail</h1>
-		</div>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Cocktail</button>
-		<button id = "next"> Next drink</button>
-
-		<h2>Name</h2>
-		<div>
+			<h1>Cocktail Database</h1>
+			<form>
+				<input id ='searchbar' type="search" name="" value="Enter a cocktail" onfocus="this.value=''">
+				<a href="#cocktailName">Search</a>
+				</button>
+			</form>
 			
-			<ul>
-				<li id="ingredient1"></li>
-				<li id="ingredient2"></li>
-				<li id="ingredient3"></li>
-				<li id="ingredient4"></li>
-				<li id="ingredient5"></li>
-				<li id="ingredient6"></li>
-				<li id="ingredient7"></li>
-				<li id="ingredient8"></li>
-			</ul>
-			<img src="" alt="">
 		</div>
-		<h3>Instructions</h3>
+		<!-- <button id = "next"> Next drink</button> -->
+		<h2 id="cocktailName"></h2>
+		<section id="cocktails">
+			
+			<div class="container">
+				<ul></ul>
+				<p></p>
+			</div>
+			<img src="" alt="">
+		
+		</section>
 		
 	
 
