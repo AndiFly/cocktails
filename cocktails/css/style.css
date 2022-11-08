@@ -15,7 +15,7 @@ img{
   margin: 0 auto;
 }
 body,html {
-  height: 100%;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background-color: black;
   scroll-behavior: smooth;
@@ -23,18 +23,18 @@ body,html {
   
 }
 
-#cocktails{
-  height: 100%
-}
 .container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-basis: 50%;
 }
 
 section {
-  display: flex
+  display: flex;
+  flex-wrap: wrap;
+  height: 0%
 }
 
 ul{
@@ -43,8 +43,8 @@ ul{
 }
 
 img {
-  max-height: 80%;
-  margin-right: 2em
+  max-height: 80vh;
+  margin-right: 2em;
 }
 
 /*STYLE*/
@@ -86,17 +86,19 @@ h1 {
   text-align: center;
   font-size: 5em;
   font-weight: 600;
-  font-style: italic;;
+  font-style: italic;
+  
 }
 
 h2 {
-  margin: 1em auto;
-  width: 30%;
+  align-self: flex-start;
+  margin: auto;
   color: white;
   text-align: center;
   font-size: 3em;
   font-weight:bold;
   text-decoration: underline;
+  flex-basis: 100%;
 }
 
 li {
